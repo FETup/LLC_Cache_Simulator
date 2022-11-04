@@ -1,0 +1,48 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+!s11f vlog 2022.3 2022.07, Jul 18 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/questasim64_2022.3/examples
+T_opt
+!s110 1667592030
+V5;8^zV2Abe6;WPIBIF>Jz0
+04 11 4 work trace_parse fast 0
+=1-989096a4bceb-63656f5e-e5-3df8
+R0
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2022.3;75
+vtrace_parse
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1667592016
+!i10b 1
+!s100 Ug<aoV;P]Aj:afSB=18_i3
+IehG0eIfVgPEIKC@LQzSU^0
+S1
+dN:/ECE585_Final_Project
+w1667592013
+8N:/ECE585_Final_Project/trace_read.sv
+FN:/ECE585_Final_Project/trace_read.sv
+!i122 0
+L0 1 16
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2022.3;75
+r1
+!s85 0
+31
+!s108 1667592016.000000
+!s107 N:/ECE585_Final_Project/trace_read.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|N:/ECE585_Final_Project/trace_read.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

@@ -5,7 +5,7 @@ int file;
 
 file = $fopen("./trace.txt","r");
 
-if(file)
+if(fd)
  $display("File Opened");
 
 else
