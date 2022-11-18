@@ -1,25 +1,24 @@
+import cache_define ::*;
 
-module trace_parse;
+
+module trace_parse();
+
+parameter    SILENT_MODE = 0, 
+	     NORMAL_MODE = 1;
+
+int          file;
+string       line, status;
+logic [31:0] address;
+logic [4:0]  command;
+
+int          w_mode;
+
+cache DUT(.address(address),.command(command));
 
 initial begin
-parameter SILENT_MODE = 0, 
-	  NORMAL_MODE = 1;
 
-parameter L1_DATA_REQ_R  = 0,  // read request from L1 data cache 
-	  L1_DATA_REQ_W  = 1,  // write request from L1 data cache 
-	  L1_INST_REQ_R  = 2,  // read request from L1 instruction cache 
-	  SNOOP_INVAL    = 3,  // snooped invalidate command 
-	  SNOOP_REQ_R	 = 4,  // snooped read request 
-	  SNOOP_REQ_W	 = 5,  // snooped write request 
-	  SNOOP_MODREQ_R = 6,  // snooped read with intent to modify request  
-	  RESET		 = 8,  // clear the cache and reset all state 
-	  PRINT		 = 9;  // print contents and state of each valid cache line
 
-int file, command;
-string line, status;
-logic [31:0] address;
 
-int w_mode;
 if($value$plusargs ("MODE=%d", w_mode))
 begin
     if( w_mode == NORMAL_MODE)
@@ -29,20 +28,19 @@ begin
 
 end
 
-file = $fopen("./trace.txt","r");
+file = $fopen("./ECE585_Final_Project/trace.txt","r");
 
-if(file)
- $display("File: trace.txt\tStatus: Open\nPrinting Contents");
-
-else
- $display("File: trace.txt\tStatus: Fail");
-
-while(!$feof(file))
+if(file) begin
+ $display("File Opened");
+ while(!$feof(file))
 	begin
 	$fgets(line,file);
+	#20
 	$sscanf(line,"%d %h",command,address);
-	$display("%d %h",command,address);
-
+        #20
+	$display("Command = %d Address = %h",command,address);
+      
+/*
 	case(command)
 	  L1_DATA_REQ_R  :$display("Command: L1_DATA_REQ_R"); 
 	  L1_DATA_REQ_W  :$display("Command: L1_DATA_REQ_W ");
@@ -54,8 +52,18 @@ while(!$feof(file))
 	  RESET		 :$display("Command: RESET");
 	  PRINT		 :$display("Command: PRINT");
 	endcase
+*/
+
 
 end
+
+end
+else
+ $display("File: trace.txt\tStatus: Fail");
+
+
+
+
 end
 
 
