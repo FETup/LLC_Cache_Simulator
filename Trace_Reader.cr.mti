@@ -1,8 +1,0 @@
-N:/ECE585_Final_Project/trace_read.sv {1 {vlog -work work -vopt -sv -stats=none N:/ECE585_Final_Project/trace_read.sv
-QuestaSim-64 vlog 2022.3 Compiler 2022.07 Jul 18 2022
--- Compiling module trace_parse
-
-Top level modules:
-	trace_parse
-
-} {} {}}
