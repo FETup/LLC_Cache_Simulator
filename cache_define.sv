@@ -1,15 +1,18 @@
 package cache_define;
 
-parameter addr_size  = 32;
-parameter cache_size = 1024;
-parameter assoc      = 4;
-parameter byte_line  = 64;
+parameter ADDR_SIZE  = 32;
+parameter CACHE_SIZE = 1024;
+parameter ASSOC      = 4;
+parameter CACHE_LINE  = 64;
 
 
+parameter INDEX       = (CACHE_SIZE/(ASSOC * CACHE_LINE));      
+parameter INDEX_BITS  = $clog2(CACHE_SIZE/(ASSOC * CACHE_LINE));
+parameter BYTE_BITS   = $clog2(CACHE_LINE);
+parameter TAG_BITS    = ADDR_SIZE - (INDEX_BITS + BYTE_BITS);
+parameter LRU_BITS    = ASSOC- 1;
 
-parameter index       = $clog2(cache_size/(assoc * byte_line));
-parameter byte_bits   = $clog2(byte_line);
-parameter tag_bits    = addr_size - (index + byte_bits);
-
+parameter HIT         = 1;
+parameter MISS        = 2;
 
 endpackage
