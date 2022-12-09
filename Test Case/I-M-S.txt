@@ -1,0 +1,69 @@
+1 30985D40
+9		
+4 30985D40
+9	
+4 30985D40	
+9
+
+# Mode: NORMAL_MODE
+# File Opened
+# 
+# ------WRITE COMMAND------
+# Hit / Miss: Cache Miss
+# Evict addess = 0xzzZ85d40
+# MESI:
+# Bus Operation : RWIM TOTAL_Address: 30985d40, Get Snoop Result: HIT
+# 
+# L2 Message: SENDLINE
+# State: M
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Number of commands =                                2
+# Total CPU requests =                                1
+# Total Cache hits   =                                0
+# Total Cache Miss   =                                1
+# Cache Hit Ratio    =                         0.000000
+# Cache Hit percentage: =                         0.000000
+# 
+# ////Valid lines in L3cache/////
+# | MESI State|  LRU|  Tag| Index|  Way|
+# |     M|1000101|   388| 24949|     7|
+# |------|------|------|------|------|
+# 
+# ------snoop read COMMAND------
+# MESI:
+# Put Snoop - Address: 30985d40, Put Snoop Result: HITM
+# State: S
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Number of commands =                                4
+# Total CPU requests =                                1
+# Total Cache hits   =                                0
+# Total Cache Miss   =                                1
+# Cache Hit Ratio    =                         0.000000
+# Cache Hit percentage: =                         0.000000
+# 
+# ////Valid lines in L3cache/////
+# | MESI State|  LRU|  Tag| Index|  Way|
+# |     S|1000101|   388| 24949|     7|
+# |------|------|------|------|------|
+# 
+# ------snoop read COMMAND------
+# MESI:
+# Put Snoop - Address: 30985d40, Put Snoop Result: HIT
+# State: S
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Number of commands =                                6
+# Total CPU requests =                                1
+# Total Cache hits   =                                0
+# Total Cache Miss   =                                1
+# Cache Hit Ratio    =                         0.000000
+# Cache Hit percentage: =                         0.000000
+# 
+# ////Valid lines in L3cache/////
+# | MESI State|  LRU|  Tag| Index|  Way|
+# |     S|1000101|   388| 24949|     7|
+# |------|------|------|------|------|
+
+
+
+
+

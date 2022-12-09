@@ -1,0 +1,54 @@
+0 30985D42	
+6 30985D42		 
+4 30985D42	 
+6 30985D42	 
+3 30985D42	
+9
+
+
+# Mode: NORMAL_MODE
+# File Opened
+# 
+# ------READ COMMAND------
+# Hit / Miss: Cache Miss
+# Evict addess = 0xzzZ85d42
+# MESI:
+# Bus Operation : READ TOTAL_Address: 30985d42, Get Snoop Result: NOHIT
+# 
+# State: E
+# L2 Message: SENDLINE
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------snoop rwim COMMAND------
+# MESI:
+# Put Snoop - Address: 30985d42, Put Snoop Result: HIT
+# State: I
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------snoop read COMMAND------
+# MESI:
+# Put Snoop - Address: 30985d42, Put Snoop Result: NOHIT
+# State: I
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------snoop rwim COMMAND------
+# MESI:
+# Put Snoop - Address: 30985d42, Put Snoop Result: NOHIT
+# State: I
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------SNOOP INVALIDATE COMMAND------
+# MESI:
+# Put Snoop - Address: 30985d42, Put Snoop Result: NOHIT
+# State = I
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Number of commands =                                6
+# Total CPU requests =                                1
+# Total Cache hits   =                                0
+# Total Cache Miss   =                                1
+# Cache Hit Ratio    =                         0.000000
+# Cache Hit percentage: =                         0.000000
+# 
+# ////Valid lines in L3cache/////
+# | MESI State|  LRU|  Tag| Index|  Way|
+

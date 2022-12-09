@@ -1,0 +1,94 @@
+0 44885D41	
+0 44885D41		
+1 44885D41	
+0 44885D41	 
+1 44885D41	
+1 44885D41	
+0 44885D41	
+0 44885D41	
+1 44885D41	
+0 44885D41	
+1 44885D41
+9	
+
+# Mode: NORMAL_MODE
+# File Opened
+# 
+# ------READ COMMAND------
+# Hit / Miss: Cache Miss
+# Evict addess = 0xzzZ85d41
+# MESI:
+# Bus Operation : READ TOTAL_Address: 44885d41, Get Snoop Result: HITM
+# 
+# State: S
+# L2 Message: SENDLINE
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------WRITE COMMAND------
+# Hit / Miss: Cache Hit
+# Tag = 44885d41 LRU 1000101
+# MESI:
+# L2 Message: SENDLINE
+# Bus Operation : INVALIDATE TOTAL_Address: 44885d41, Get Snoop Result: HITM
+# 
+# State: M
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------READ COMMAND------
+# Hit / Miss: Cache Hit
+# Tag = 44885d41 LRU 1000101
+# MESI:
+# L2 Message: SENDLINE
+# State: M
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------WRITE COMMAND------
+# Hit / Miss: Cache Hit
+# Tag = 44885d41 LRU 1000101
+# MESI:
+# L2 Message: SENDLINE
+# State: M
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------READ COMMAND------
+# Hit / Miss: Cache Hit
+# Tag = 44885d41 LRU 1000101
+# MESI:
+# L2 Message: SENDLINE
+# State: M
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------WRITE COMMAND------
+# Hit / Miss: Cache Hit
+# Tag = 44885d41 LRU 1000101
+# MESI:
+# L2 Message: SENDLINE
+# State: M
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------READ COMMAND------
+# Hit / Miss: Cache Hit
+# Tag = 44885d41 LRU 1000101
+# MESI:
+# L2 Message: SENDLINE
+# State: M
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------WRITE COMMAND------
+# Hit / Miss: Cache Hit
+# Tag = 44885d41 LRU 1000101
+# MESI:
+# L2 Message: SENDLINE
+# State: M
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Number of commands =                                9
+# Total CPU requests =                                8
+# Total Cache hits   =                                7
+# Total Cache Miss   =                                1
+# Cache Hit Ratio    =                         0.875000
+# Cache Hit percentage: =                        87.000000
+# 
+# ////Valid lines in L3cache/////
+# | MESI State|  LRU|  Tag| Index|  Way|
+# |     M|1000101|   548|  8565|     7|
+# |------|------|------|------|------|

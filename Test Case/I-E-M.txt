@@ -1,0 +1,56 @@
+0 44885D43	
+0 44885D43	
+1 44885D43	
+0 44885D43	
+1 44885D43	
+9 
+
+
+# Mode: NORMAL_MODE
+# File Opened
+# 
+# ------READ COMMAND------
+# Hit / Miss: Cache Miss
+# Evict addess = 0xzzZ85d43
+# MESI:
+# Bus Operation : READ TOTAL_Address: 44885d43, Get Snoop Result: NOHIT
+# 
+# State: E
+# L2 Message: SENDLINE
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------WRITE COMMAND------
+# Hit / Miss: Cache Hit
+# Tag = 44885d43 LRU 1000101
+# MESI:
+# L2 Message: SENDLINE
+# State: M
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------READ COMMAND------
+# Hit / Miss: Cache Hit
+# Tag = 44885d43 LRU 1000101
+# MESI:
+# L2 Message: SENDLINE
+# State: M
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------WRITE COMMAND------
+# Hit / Miss: Cache Hit
+# Tag = 44885d43 LRU 1000101
+# MESI:
+# L2 Message: SENDLINE
+# State: M
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Number of commands =                                5
+# Total CPU requests =                                4
+# Total Cache hits   =                                3
+# Total Cache Miss   =                                1
+# Cache Hit Ratio    =                         0.750000
+# Cache Hit percentage: =                        75.000000
+# 
+# ////Valid lines in L3cache/////
+# | MESI State|  LRU|  Tag| Index|  Way|
+# |     M|1000101|   548|  8565|     7|
+# |------|------|------|------|------|
+

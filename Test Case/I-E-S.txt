@@ -1,0 +1,34 @@
+0 30985D43
+4 30985D43
+4 30985D43
+9
+
+# Mode: NORMAL_MODE
+# File Opened
+# 
+# ------READ COMMAND------
+# Hit / Miss: Cache Miss
+# Evict addess = 0xzzZ85d43
+# MESI:
+# Bus Operation : READ TOTAL_Address: 30985d43, Get Snoop Result: NOHIT
+# 
+# State: E
+# L2 Message: SENDLINE
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ------snoop read COMMAND------
+# MESI:
+# Put Snoop - Address: 30985d43, Put Snoop Result: HIT
+# State: S
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Number of commands =                                3
+# Total CPU requests =                                1
+# Total Cache hits   =                                0
+# Total Cache Miss   =                                1
+# Cache Hit Ratio    =                         0.000000
+# Cache Hit percentage: =                         0.000000
+# 
+# ////Valid lines in L3cache/////
+# | MESI State|  LRU|  Tag| Index|  Way|
+# |     S|1000101|   388| 24949|     7|
+# |------|------|------|------|------|
