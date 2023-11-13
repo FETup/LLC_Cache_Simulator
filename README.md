@@ -13,15 +13,15 @@ Write Policies:
 
 Write Allocate: The cache allocates space for a line on a write miss before updating it.
 Write-Back: Subsequent writes to the same line are kept in the cache until the line is evicted.
+
 Coherence Protocol:
-
 MESI Protocol: Ensures cache coherence by tracking the state of each cache line (Modified, Exclusive, Shared, Invalid).
+
 Replacement Policy:
-
 Pseudo-LRU Scheme: Implements a pseudo-Least Recently Used algorithm for effective line replacement.
+
 Inclusivity:
-
 The cache maintains inclusivity with the next higher-level cache, ensuring consistency in data across the memory hierarchy.
-Multi-Processor Support:
 
+Multi-Processor Support:
 Designed to handle up to four processors in a shared memory configuration, providing a realistic simulation of cache interactions in a multi-processing environment.
